@@ -1,5 +1,8 @@
 import React from "react";
 import "./footer.css";
+import instaLogo from "../assets/instagram.svg";
+import facebookLogo from "../assets/facebook.svg";
+import twitterLogo from "../assets/twitter.svg";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -10,17 +13,17 @@ const Footer = () => {
                 <div class="bottom-social bottom-twitter" style={{ color: "red", fontSize: "200px" }}>
                     {/* <img src="https://d35408cyocioye.cloudfront.net/new3/ic-tw.svg" alt="1"></img> */}
                     <a target="_blank" href="https://www.instagram.com/hinesh.patel/">
-                    <img src="/src/assets/telegram.svg" alt="1"></img>
+                    <img src={instaLogo} alt="1"></img>
                     </a>
                 </div>
                 <div class="bottom-social bottom-facebook">
                     <a target="_blank" href="https://www.facebook.com/hineshp">
-                    <img src="/src/assets/facebook.svg" alt="2"></img>
+                    <img src={facebookLogo} alt="2"></img>
                     </a>
                 </div>
                 <div class="bottom-social bottom-instagram">
                     <a target="_blank" href="https://www.instagram.com/hinesh.patel/">
-                    <img id="instaLogo" src="/src/assets/instagram.svg" alt="3"></img>
+                    <img id="instaLogo" src={twitterLogo} alt="3"></img>
                     {/* <img src="/src/assets/home-theater.jpg" alt="" /> */}
                     </a>
                 </div>

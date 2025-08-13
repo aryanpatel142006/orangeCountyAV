@@ -1,13 +1,13 @@
 import React from "react";
-
-
+import  avWhiteLogo from "../assets/av-white-transparentBG.png";
+import  avBlackLogo from "../assets/av-black-transparentBG.png";
 const NavBar = () => {
     return(
         <div className="navbar-container">
             <div className="main">
                 <div className="logo-container">
-                    <img className="logo white" src="/src/assets/av-white-transparentBG.png" alt="AV Logo" />
-                    <img className="logo black" src="/src/assets/av-black-transparentBG.png" alt="AV Logo" />
+                    <img className="logo white" src={avWhiteLogo} alt="AV Logo" />
+                    <img className="logo black" src={avBlackLogo} alt="AV Logo" />
                 </div>
                 <div className="nav-links">
                     <a href="#home">HOME</a>
