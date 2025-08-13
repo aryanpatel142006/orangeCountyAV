@@ -1,7 +1,7 @@
 import React from "react";
 import TextType from "../elements/TextType"
 import ScrollReveal from '../elements/ScrollReveal';
-
+import "./bornStory.css";
 const BornStory = () => {
     // const privacy_icon = () => {
     //     return(

@@ -1,6 +1,7 @@
 import React from "react";
 import  avWhiteLogo from "../assets/av-white-transparentBG.png";
 import  avBlackLogo from "../assets/av-black-transparentBG.png";
+import "./navbar.css";
 const NavBar = () => {
     return(
         <div className="navbar-container">
