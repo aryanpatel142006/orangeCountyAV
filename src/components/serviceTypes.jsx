@@ -2,7 +2,8 @@ import React from "react";
 // import "../elements/CircularGallery.css"
 // import CircularGallery from "../elements/CircularGallery";
 import ScrollStack, { ScrollStackItem } from "../elements/ScrollStack";
-import "./serviceTypes.css";
+import '/src/components/serviceTypes.css';  
+
 const ServiceTypes = () => {
     return (
     
