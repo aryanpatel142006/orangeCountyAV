@@ -1,0 +1,54 @@
+.service-types-container{
+    height: 100%;
+    /* display: flex; */
+    
+    }
+
+.card1{
+    background: url('../assets/smart-home-technology.jpg');
+    background-size: cover;
+    /* background-size: contain; */
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.card2{
+    background: url("../assets/wi-fi-networking.jpg");
+    background-size: cover;
+    /* background-size: auto; */
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+.card3{
+    background: url("../assets/multi-room-music2.jpg");
+    /* background: url("../assets/multi-room-music.jpg"); */
+    /* background: url("../assets/multi-room-music3.jpg"); */
+    background-size: cover;
+    background-position: center;
+}   
+
+.card4{
+    background: url('../assets/home-theater.jpg');
+    /* background: url('../assets/home-theater2.jpeg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.card5{
+    background: url('../assets/lighting-control2.jpg');
+    /* background: url('../assets/lighting-control.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.card6{
+    /* background: url('../assets/surveillance.jpeg'); */
+    /* background: url('../assets/lighting-control.jpg'); */
+    background: url('../assets/surveillance2.jpg');
+    background-size: cover;
+    background-position: center;
+}

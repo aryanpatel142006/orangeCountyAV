@@ -4,9 +4,9 @@
   padding: 2rem;
   text-align: center; */
   /* box-sizing: border-box; */
-  display: flexbox;
+  /* display: flexbox;
   align-items: center;
-  justify-content: left;
+  justify-content: left; */
 }
 /* 
 .logo {
@@ -45,60 +45,280 @@
   color: #888;
 } */
 
+
 * {
   box-sizing: border-box !important;
 }
 
-/* main-div{
-  height: 1000px;
+.main-div {
+  /* height: 1000px; */
+  height: 100%;
+  /* max-height: 1000px; */
   width: auto;
-} */
-.hero-video-container{
-  position: absolute;
-  width: 100vw ;
-  height: 100vh ;
-  /* background-color: red; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; 
-  text-align: center; */
-  /* object-fit: cover; */
-  border: 10px solid;
-  border-color: rgb(247, 247, 247);
   overflow: hidden;
+  /* background-color: black; */
+  /* min-width: 620px !important; */
+}
+.hero-video-container{
+  /* position: absolute; */
+  width: 100vw ;
+  height: 100vh;
+  /* background: transparent; */
+  /* background-color: red; */
+  /* border: 10px solid;
+  border-color: rgb(247, 247, 247); */
+  /* z-index: -10; */
+
   z-index: -1;
-  
+  background-color: #000;
+  background-image: url("/src/assets/home-hero-video-loop-thumbnail.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .1s;
+  position: fixed;
+  overflow:hidden
 }
 
+/* .hero-video-overlay{
+  height: 100vh;
+  width: 100vw;
+  background: transparent;
+  z-index: 1;
+} */
 .hero-video{
   /* visibility: hidden; */
-  position: absolute;
-  height: 100vh;
-  width:100%;
-  /* border: 10px solid white; */
+  height: 100%;
+  /* width:100%; */
+  width: 100vw;
   object-fit: cover;
-  /* border-color: rgb(247, 247, 247); */
-  /* border-color: blue; */
+  /* background-repeat: no-repeat; */
 }
+
+
+.hero-video-container-top{
+  top: 0;
+  height: 100vh;
+  border: 10px solid;
+  border-color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hv-main-text{
+  /* font-family: "Lato", sans-serif; */
+  font-weight: 600;
+  font-size: 4em;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  /* font-family: "CGBold",sans-serif; */
+  font-family: "Montserrat", sans-serif;
+}
+
 
 .navbar-container{
+  z-index: 10;
     position: fixed;
-    width: 90vw;
-    height: 30px;
-    background-color: black;
-    /* display:flex; */
-    position: absolute;
-    /* align-self: center;
-    justify-self: center; */
+    top: 0;
+    left: 50%;
+    transform: translate( -50%);
+    /* width: 100%; */
+    height: 60px;
+    width: 100%;
+    /* border: 40px solid transparent; */
 
-    /* justify-self: center !important; */
-    margin: 0 auto;
-    margin-top: 20px;
-    /* align-self: center; */
-    
+    /* background-color: black; */
+    background-color: transparent;
+    border-radius: 50px;
+    margin-top: 16px;
+    padding-inline:22px;
+    font-family: "Lato", sans-serif;
+    color: rgb(87, 87, 85);
+    font-weight: 600;
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 0.8em;
+    }
+    min-width: 610px !important;
 }
 
-.test{
-  height: 200px;
-  background-color: red;
+.navbar-container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  box-shadow: 0 0 40px -15px #00000080;
+  color: #575755 !important;
+  a{
+    color: #575755;
+  }
+  .logo.black{
+  /* display: none; */
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  /* top: 30px;
+  left: 30px; */
+ 
+  }
+  .logo.white{
+    display: none;
+  }
+}
+
+
+.main{
+  /* background-color: blue; */
+  display: flex;
+  align-items: center; 
+
+  height: 100%;
+  width: 100%;
+
+}
+
+.logo-container{
+  height: 60px;
+  width: 60px;
+  /* display: relative; */
+  /* display: block; */
+  /* object-fit: cover; */
+  /* background-color: yellow; */
+
+}
+
+
+.logo.white{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo.black{
+  display: none;
+  
+ 
+}
+.nav-links {
+  display: flex;
+  gap: 4em;
+  padding: 22px;
+  align-items: center;
+  /* justify-content: space-around; */
+  height: 100%;
+  /* width: 100%; */
+  /* background-color: green; */
+  a {
+    color: white;
+  }
+}
+.navbar-contact-us{
+  height: 100%;
+  /* width: auto; */
+  width: 100% !important;
+  /* background-color: orange; */
+  display: flex;
+  flex:1;
+  justify-content: right;
+  align-items: center;
+  padding:22px;
+  /* justify-self: right; */
+}
+
+.contact-us-container{
+  background-color: rgb(0, 140, 255);
+  padding: 0.5em;
+  border-radius: 100px;
+  a {
+    color: white !important;
+  }
+}
+
+.story{
+  /* height: 640px; */
+  min-height: 640px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+
+  b {
+    /* font-size: smaller; */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Nunito,sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+}
+
+.story-text {
+  /* font-family: "Lato", sans-serif; */
+  /* font-weight: 400; */
+  /* font-size: 1.2em; */
+  /* line-height: 1.5; */
+  /* color: #575755; */
+  /* padding: 2em; */
+  max-width: 800px;
+  /* margin: auto; */
+  /* text-align: center; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  letter-spacing: -1px;
+  text-align: center;
+  color: #575755;
+  font-family: Cormorant Garamond,serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.43;
+
+  
+
+}
+
+.quote {
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #575755;
+  /* padding: 2em; */
+  max-width: 800px;
+  margin: auto;
+
+  max-width: 1000px;
+  /* background-color: #000; */
+
+  display: flex;
+  flex-direction: column;
+
+}
+.quote-text {
+  font-family: "Inspiration", cursive;
+  font-weight:bolder;
+  font-style: normal;
+  font-size: 3em;
+  line-height: 1;
+  /* background-color: #000; */
+  /* text-decoration: wavy; */
+}
+
+.quote-author {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #575755;
+  margin-top: 1em;
 }

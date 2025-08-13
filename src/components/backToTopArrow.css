@@ -1,0 +1,76 @@
+
+
+/* BACK TO TOP */
+
+#backToTop {
+    opacity: 0;
+    height: 30px;
+    width: 150px;
+    z-index: 102;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    transition: right .2s, opacity .5s;
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    /* right:-110px */
+}
+
+div#backToTop {
+    background:url(white-text.96be5898.svg) -9999px -9999px no-repeat
+}
+
+
+.verticalDownLine {
+    height: 15px;
+    width: 2px;
+    background: #fff;
+    border-radius: 2px;
+    position: relative;
+    top: 25%;
+    left:15px
+}
+
+
+
+#backToTop:hover {
+    opacity:1 !important
+}
+
+.verticalDownLine {
+    height: 15px;
+    width: 2px;
+    background: #fff;
+    border-radius: 2px;
+    position: relative;
+    top: 25%;
+    left:15px
+}
+
+#backToTop p {
+    color: #fff;
+    margin-top: 3px;
+    margin-left: 40px;
+    position: absolute;
+    top:0
+}
+
+.horiDownLine {
+    height: 10px;
+    width: 2px;
+    background: #fff;
+    border-radius: 2px;
+    position: absolute;
+    top:6px
+}
+
+.horiDownLine1 {
+    left: 12px;
+    transform:rotate(45deg)
+}
+
+.horiDownLine2 {
+    left: 18px;
+    transform:rotate(-45deg)
+}
