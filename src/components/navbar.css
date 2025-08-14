@@ -94,9 +94,12 @@
         height: 50px;
     } */
     
-
+    .navbar-container {
+        padding: 0px;
+        font-size:medium;
+    }
      .nav-links{
-        gap: 2em !important;
+        gap: 1em !important;
      }
             
 }

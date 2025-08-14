@@ -4,6 +4,29 @@
     
     }
 
+@media only screen and (max-width: 700px) {
+    .service-types-container{
+        /* height: auto; */
+        /* display: block; */
+        /* width: 100%; */
+        /* padding: 0px; */
+    }
+
+    .scroll-stack-inner{
+        /* padding: 10vh 2rem 50rem; */
+        /* width: 100%; */
+        padding: 0px;
+        /* width: 100vw; */
+        max-width: 100%;
+        /* height: auto; */
+    }
+    .card6{
+        /* image-position: left; */
+        background-position: 100% !important;
+        
+    }
+}
+
 .card1{
     background: url('../assets/smart-home-technology.jpg');
     background-size: cover;

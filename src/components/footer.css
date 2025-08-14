@@ -22,7 +22,7 @@
 
 .bottom-social-container {
     margin-bottom: 20px;
-    display:flex;
+    /* display:flex; */
     gap: 20px;
 }
 
@@ -38,6 +38,21 @@ a .bottom-link:hover {
 }
 
 
+@media only screen and (max-width: 700px) {
+    .bottom-link-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+    }
+    .bottom-link{
+        font-size: 14px;
+        padding: 0px;
+        margin: 0px;
+        opacity: 1;
+        color: grey;
+    }
+}
 .bottom-link-container.mobile-bottom-links {
     max-width: 350px;
     flex-wrap: wrap;
